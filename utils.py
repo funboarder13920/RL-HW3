@@ -17,7 +17,6 @@ def collect_episodes(mdp, policy=None, horizon=None, n_episodes=1):
             next_state, reward, terminal, _ = mdp.step(action)
             # env.render()
             observations.append(state)
-            # print(action, state, next_state)
             actions.append(action)
             rewards.append(reward)
             next_states.append(next_state)
